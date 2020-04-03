@@ -10,9 +10,156 @@ body, html
     
 }
 
-article 
+nav 
 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+    align-items: center;
+    padding: 5%;
+    padding-top: 20px;
+
+#zalogujWrapper 
+{
+    display: flex;
+    align-items: center;
+}
+
+
+    #topNavMenuBar 
+    {
+        margin-left: 40px;
+    }
     
+
+    span 
+    {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: yellow;
+        text-align: center;
+       line-height: 25px;
+
+    }
+
+    button 
+    {
+        background-color: transparent;
+        border: none;
+        padding: 20px;
+        color: white;
+        opacity: .8;
+        font-size: 1.1em;
+
+
+        &:hover 
+        {
+            cursor: pointer;
+        }
+
+    }
+
+
+    #topNavRight
+    {
+        display: flex;
+        flex-direction: row;
+        
+        
+    }
+    
+
+}
+
+#searchArea
+{
+
+display: flex;
+flex-direction: row;
+width: 80%;
+height: 60px;
+margin: 0 auto;
+
+
+
+
+div#bing
+{
+    width: 12%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  
+    
+
+
+    img 
+    {
+        width: 60px;
+        height: 60px;
+    }
+
+    span 
+    {
+        font-size: 2em;
+        color: white;
+        margin-left: 5px;
+       
+    }
+
+
+}
+
+div#inputArea 
+{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    input 
+    {
+        width: 70%;
+        height: 60px;
+        border: none;
+    }
+
+    #spanWrapper
+
+    {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+
+        span 
+        {
+            &:hover 
+            {
+                cursor: pointer;
+            }
+        }
+
+    }
+
+ 
+
+}
+
+
+
+
+
+
+
+
 }
 
 /*figure {
