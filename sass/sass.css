@@ -5,6 +5,9 @@
 
 body, html {
   background-color: #a5a9aa;
+  background: url("../img/natural scenery.png");
+  background-repeat: no-repeat;
+  background-size: 190%;
 }
 
 nav {
@@ -38,14 +41,30 @@ nav #topNavMenuBar {
   margin-left: 40px;
 }
 
+nav #topNavMenuBar i {
+  font-size: 2rem;
+}
+
 nav span {
   width: 30px;
   height: 30px;
-  border: 1px solid black;
   border-radius: 50%;
-  background-color: yellow;
+  background-color: rgba(238, 238, 238, 0.7);
   text-align: center;
   line-height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav span i {
+  color: rgba(35, 34, 34, 0.5);
 }
 
 nav button {
@@ -82,6 +101,11 @@ nav #topNavRight {
   width: 80%;
   height: 60px;
   margin: 0 auto;
+}
+
+#searchArea i {
+  font-size: 40px;
+  color: #00809d;
 }
 
 #searchArea div#bing {
@@ -135,6 +159,7 @@ nav #topNavRight {
   border: none;
   outline: none;
   line-height: 50px;
+  font-size: 48px;
 }
 
 #searchArea div#inputArea #spanWrapper {
@@ -146,9 +171,14 @@ nav #topNavRight {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 15px;
+}
+
+#searchArea div#inputArea #spanWrapper span {
+  margin: 0;
   padding: 15px;
 }
 
@@ -186,7 +216,8 @@ nav #topNavRight {
   width: 40px;
   height: 40px;
   font-size: 38px;
-  border: 1px solid white;
+  border: 1px solid transparent;
+  background-color: rgba(35, 34, 34, 0.3);
   padding: 5px;
   margin: 5px;
   color: white;
@@ -203,10 +234,16 @@ nav #topNavRight {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 5px;
 }
 
 #aboveImgPanel div span:hover {
   cursor: pointer;
+}
+
+#aboveImgPanel div span i {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 #imgSection {
@@ -220,6 +257,10 @@ nav #topNavRight {
   width: 100%;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+#imgSection i {
+  color: rgba(35, 34, 34, 0.3);
 }
 
 #imgSection .imgArrow {
