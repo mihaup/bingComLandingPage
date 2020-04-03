@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background-color: #a5a9aa;
+}
+
+/*figure {
+    display: table;
+  } */
+figcaption {
+  display: table-caption;
+  caption-side: top;
+}
+/*# sourceMappingURL=sass.css.map */
