@@ -1,14 +1,23 @@
+
+$width: 100%;
+
+
 * 
 {
     margin:0;
     padding: 0;
+   
 }
+
+
 
 body, html
 {
    background-color: rgb(165, 169, 170);
     
 }
+
+
 
 nav 
 {
@@ -122,12 +131,23 @@ div#inputArea
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
 
-    input 
+    input[type=text]
     {
         width: 70%;
-        height: 60px;
+        height: 50px;
         border: none;
+        outline: none;
+        line-height: 50px;
+
+
+        &:focus 
+        {
+        
+        }
+
     }
 
     #spanWrapper
@@ -153,20 +173,191 @@ div#inputArea
 
 }
 
+}
+
+
+#aboveImgPanel
+{
+
+width: 67%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin: 0 auto;
+padding-top: 20%;
+
+
+
+
+div {
+
+    display: flex;
+    flex-direction: row;
+   
+
+ 
+
+    span
+    {   
+       
+        width: 40px;
+        height: 40px;
+        font-size: 38px;
+        border: 1px solid white;
+        padding: 5px;
+        margin: 5px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+           
+
+
+        &:hover 
+        {
+            cursor: pointer;
+        }
+    
+    }
+
+}
+
+}
 
 
 
 
 
+#imgSection
+{
+    display: flex;
+    flex-direction: row;
+   
+    width: 100%;
+    
+    margin: 0 auto;
+    margin-top: 20px;
+
+
+    .imgArrow
+    {
+        background-color: transparent;
+        border: none;
+        font-size: 48px;
+        align-items: center;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+
+        &:hover 
+        {
+            cursor: pointer;
+        }
+     
+
+    }
+
+
+    div 
+    {
+        width: 20%;
+        height: auto;
+   
+        border: 1px solid  rgba(35, 34, 34, 0.3);
+        border-radius: 5px;
+        margin: 5px;
+        
+        background-color: rgba(35, 34, 34, 0.3);
+        display: flex;
+        flex-direction: row;
+
+        span 
+        {
+            width: 60%;
+            padding-top: 50px;
+        }
+
+
+
+        figure {
+
+            display: table;
+            width: 40%;
+           
+
+           
+
+
+            img 
+            {
+                width: 80px;
+                height: 90px;
+                padding-left: 5px;
+                
+                padding-top: 10px;
+                
+
+                &:hover 
+                {
+                    cursor: pointer;
+
+                }
+
+
+               
+            }
+    
+
+            figcaption {
+                display: table-caption;
+                caption-side: top;
+                padding: 3px;
+                padding-top: 4px;
+              }
+
+
+
+        } 
+      
+    
+
+
+
+
+
+    }
 
 
 }
 
-/*figure {
-    display: table;
-  } */
 
-figcaption {
-    display: table-caption;
-    caption-side: top;
-  }
+footer 
+{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-around;
+    width: $width;
+    background-color: rgba(35, 34, 34, 0.3);
+
+
+    a 
+    {
+        width: auto;
+        opacity: .7;
+
+        &:hover 
+        {
+            cursor: pointer;
+            opacity: 1;
+        }
+    }
+    
+}
+
