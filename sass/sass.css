@@ -383,6 +383,8 @@ footer a:hover {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
+    position: fixed;
+    bottom: 0;
   }
   body footer a {
     padding: 10px;
@@ -396,22 +398,37 @@ footer a:hover {
     padding-top: 13%;
   }
   body footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 823px) {
   body #aboveImgPanel {
     padding-top: 25%;
   }
   body footer {
+    position: relative;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 768px) {
+  body footer {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  body footer {
+    position: relative;
+  }
+}
+
+@media only screen and (max-width: 414px) {
   body {
     background-repeat: repeat;
   }

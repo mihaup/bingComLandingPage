@@ -427,6 +427,9 @@ footer
 
         }
 
+
+       
+
     }
   }
 
@@ -457,6 +460,8 @@ footer
     {
         width: 100%;
         flex-flow: row wrap;
+        position: fixed;
+        bottom: 0;
 
         a 
         {
@@ -487,7 +492,8 @@ footer
 
        footer 
        {
-        position: relative;
+        position: fixed;
+        bottom: 0;
        }
 
     }
@@ -501,7 +507,7 @@ footer
 
 
 
-@media only screen and (max-width: 768px) 
+@media only screen and (max-width: 823px) 
 
 {
     body 
@@ -516,7 +522,7 @@ footer
 
     footer 
     {
-        
+        position: relative;
         justify-content: center;
     }
 
@@ -525,7 +531,31 @@ footer
 
 }
 
-@media only screen and (max-width: 375px) 
+@media only screen and (max-width: 768px)
+{
+    body 
+    {
+        footer 
+        {
+            position: fixed;
+            bottom: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 760px)
+{
+    body 
+    {
+        footer 
+        {
+            position: relative;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 414px) 
 
 {
 
