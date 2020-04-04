@@ -17,6 +17,8 @@ body, html
    background: url("../img/natural\ scenery.png");
    background-repeat: no-repeat;
    background-size: 190%;
+  
+   overflow-x: hidden;
     
 }
 
@@ -408,3 +410,205 @@ footer
     
 }
 
+
+
+@media only screen and (max-width: 1366px) {
+    body {
+    
+        #searchArea
+        {
+            flex-direction: column;
+            align-items: center;
+
+            #bing 
+            {
+                padding: 10px;
+            }
+
+        }
+
+    }
+  }
+
+
+  @media only screen and (max-width: 1298px) 
+  {
+
+    body 
+
+    {
+        
+
+    
+        #searchArea 
+        {
+            padding-top: 0;
+        }
+    
+
+         #imgSection 
+        {
+            
+            
+        }
+
+    
+    footer 
+    {
+        width: 100%;
+        flex-flow: row wrap;
+
+        a 
+        {
+            padding: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+  }
+
+}
+
+@media only screen and (max-width: 1024px)
+
+{
+
+    body 
+    {
+       #aboveImgPanel
+       {
+           padding-top: 13%;
+       }
+
+      
+
+
+
+       footer 
+       {
+        position: relative;
+       }
+
+    }
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) 
+
+{
+    body 
+    {
+
+
+        #aboveImgPanel
+        {
+            padding-top: 25%;
+        }
+    
+
+    footer 
+    {
+        
+        justify-content: center;
+    }
+
+}
+
+
+}
+
+@media only screen and (max-width: 375px) 
+
+{
+
+body 
+
+{
+
+    
+
+    background-repeat: repeat;
+
+
+    nav 
+    {
+        flex-direction: column;
+    }
+
+    #bing 
+    {
+        justify-content: center;
+    }
+
+    #searchArea
+    {
+        width: 90%;
+
+        input
+        {
+            width: 100%;
+        }
+
+        i
+        {
+            display: none;
+        }
+
+        .fas.fa-search 
+        {
+            display: block;
+        }
+
+    }
+
+
+    #aboveImgPanel 
+    {
+        margin-top: 15%;
+    }
+
+    
+
+
+    #imgSection
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div 
+        {
+            width: 100%;
+            border: none;
+
+            i
+    {
+        display: none;
+    }
+
+
+        }
+    }
+
+
+    footer
+    {
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        background-color: rgba(35, 34, 34, 0.9);
+        color: white;
+    }
+
+}
+
+
+}
